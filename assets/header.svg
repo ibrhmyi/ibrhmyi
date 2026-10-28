@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360">
+  <defs>
+    <radialGradient id="nebulaA" cx="35%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#6d5cff" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#3b2fa8" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nebulaB" cx="60%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.4"/>
+      <stop offset="60%" stop-color="#0e7490" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nebulaC" cx="70%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.32"/>
+      <stop offset="60%" stop-color="#9d174d" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wave" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+    <linearGradient id="fadeText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e6e6ef"/>
+      <stop offset="100%" stop-color="#8b8ba3"/>
+    </linearGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3.2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M 44 0 L 0 0 0 44" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .blob { transform-origin: center; transform-box: fill-box; }
+    @keyframes drift1 { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(60px,-30px) scale(1.12); } }
+    @keyframes drift2 { 0%,100% { transform: translate(0,0) scale(1.05); } 50% { transform: translate(-70px,40px) scale(0.92); } }
+    @keyframes drift3 { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(40px,50px) scale(1.15); } }
+    #b1 { animation: drift1 14s ease-in-out infinite; }
+    #b2 { animation: drift2 18s ease-in-out infinite; }
+    #b3 { animation: drift3 11s ease-in-out infinite; }
+
+    @keyframes twinkle { 0%,100% { opacity: 0.12; } 50% { opacity: 0.9; } }
+    .star { animation: twinkle 4s ease-in-out infinite; }
+    .s2 { animation-duration: 5.4s; animation-delay: -1.2s; }
+    .s3 { animation-duration: 3.1s; animation-delay: -2.4s; }
+    .s4 { animation-duration: 6.6s; animation-delay: -0.7s; }
+
+    @keyframes dash { to { stroke-dashoffset: 0; } }
+    .draw { stroke-dasharray: 1; stroke-dashoffset: 1; animation: dash 2.6s cubic-bezier(.6,.05,.3,1) 1.1s forwards; }
+    @keyframes pulseDot { 0%,100% { opacity: .25; r: 3; } 50% { opacity: 1; r: 4.4; } }
+    .ping { animation: pulseDot 2.2s ease-in-out infinite; }
+    @keyframes scan { 0% { transform: translateX(-260px); } 100% { transform: translateX(1460px); } }
+    #scanner { animation: scan 9s linear infinite; }
+  </style>
+
+  <!-- void -->
+  <rect width="1200" height="360" fill="#050508"/>
+  <rect width="1200" height="360" fill="url(#grid)"/>
+
+  <!-- aurora nebula -->
+  <g filter="url(#soft)">
+    <ellipse id="b1" class="blob" cx="380" cy="130" rx="330" ry="170" fill="url(#nebulaA)"/>
+    <ellipse id="b2" class="blob" cx="820" cy="90" rx="300" ry="150" fill="url(#nebulaB)"/>
+    <ellipse id="b3" class="blob" cx="950" cy="260" rx="280" ry="140" fill="url(#nebulaC)"/>
+  </g>
+
+  <!-- starfield -->
+  <g fill="#ffffff">
+    <circle class="star"    cx="60"  cy="40"  r="1.4"/>
+    <circle class="star s2" cx="140" cy="300" r="1.1"/>
+    <circle class="star s3" cx="210" cy="60"  r="1.6"/>
+    <circle class="star s4" cx="300" cy="320" r="1.0"/>
+    <circle class="star s2" cx="360" cy="30"  r="1.2"/>
+    <circle class="star s3" cx="430" cy="300" r="1.3"/>
+    <circle class="star"    cx="520" cy="55"  r="1.0"/>
+    <circle class="star s4" cx="590" cy="330" r="1.5"/>
+    <circle class="star s2" cx="660" cy="35"  r="1.1"/>
+    <circle class="star s3" cx="740" cy="310" r="1.4"/>
+    <circle class="star"    cx="810" cy="45"  r="1.0"/>
+    <circle class="star s4" cx="880" cy="330" r="1.2"/>
+    <circle class="star s2" cx="950" cy="40"  r="1.5"/>
+    <circle class="star s3" cx="1020" cy="300" r="1.1"/>
+    <circle class="star"    cx="1090" cy="60" r="1.3"/>
+    <circle class="star s4" cx="1140" cy="320" r="1.0"/>
+    <circle class="star s2" cx="1150" cy="150" r="1.2"/>
+    <circle class="star s3" cx="40"  cy="200" r="1.3"/>
+    <circle class="star"    cx="90"  cy="120" r="1.0"/>
+    <circle class="star s4" cx="260" cy="180" r="1.1"/>
+    <circle class="star s2" cx="480" cy="140" r="1.0"/>
+    <circle class="star s3" cx="700" cy="200" r="1.2"/>
+    <circle class="star"    cx="930" cy="170" r="1.0"/>
+    <circle class="star s4" cx="1050" cy="220" r="1.4"/>
+  </g>
+
+  <!-- scanner sweep -->
+  <rect id="scanner" x="0" y="0" width="220" height="360" fill="#ffffff" opacity="0.028"/>
+
+  <!-- signal waveform (self-drawing) -->
+  <g filter="url(#glow)" fill="none" stroke="url(#wave)" stroke-width="2.4" stroke-linecap="round">
+    <path class="draw" pathLength="1" d="M0,318 L120,318 L150,318 L170,296 L190,340 L210,274 L230,318 L262,318 L285,300 L308,334 L331,286 L354,318 L420,318 L448,306 L476,330 L504,294 L532,318 L620,318 L646,310 L672,326 L698,302 L724,318 L820,318 L848,298 L876,336 L904,280 L932,318 L1040,318 L1068,308 L1096,328 L1124,296 L1152,318 L1200,318"/>
+  </g>
+  <circle class="ping" cx="1152" cy="318" r="3" fill="#22d3ee"/>
+
+  <!-- typing: hi, i'm ibrahim -->
+  <text x="80" y="170" font-family="Inter, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="68" font-weight="800" letter-spacing="-1.5">
+    <tspan fill="url(#fadeText)">
+      <tspan opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.25s" dur="0.01s" fill="freeze"/>h</tspan><tspan opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.35s" dur="0.01s" fill="freeze"/>i</tspan><tspan opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.45s" dur="0.01s" fill="freeze"/>,</tspan><tspan opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.55s" dur="0.01s" fill="freeze"/> </tspan><tspan opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.62s" dur="0.01s" fill="freeze"/>i</tspan><tspan opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.70s" dur="0.01s" fill="freeze"/>'</tspan><tspan opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.78s" dur="0.01s" fill="freeze"/>m</tspan><tspan opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.95s" dur="0.01s" fill="freeze"/> </tspan><tspan opacity="0" fill="#22d3ee"><animate attributeName="opacity" from="0" to="1" begin="1.05s" dur="0.01s" fill="freeze"/>i</tspan><tspan opacity="0" fill="#22d3ee"><animate attributeName="opacity" from="0" to="1" begin="1.13s" dur="0.01s" fill="freeze"/>b</tspan><tspan opacity="0" fill="#22d3ee"><animate attributeName="opacity" from="0" to="1" begin="1.21s" dur="0.01s" fill="freeze"/>r</tspan><tspan opacity="0" fill="#22d3ee"><animate attributeName="opacity" from="0" to="1" begin="1.29s" dur="0.01s" fill="freeze"/>a</tspan><tspan opacity="0" fill="#22d3ee"><animate attributeName="opacity" from="0" to="1" begin="1.37s" dur="0.01s" fill="freeze"/>h</tspan><tspan opacity="0" fill="#22d3ee"><animate attributeName="opacity" from="0" to="1" begin="1.45s" dur="0.01s" fill="freeze"/>i</tspan><tspan opacity="0" fill="#22d3ee"><animate attributeName="opacity" from="0" to="1" begin="1.53s" dur="0.01s" fill="freeze"/>m</tspan><tspan opacity="0" fill="#22d3ee"><animate attributeName="opacity" from="0" to="1" begin="1.70s" dur="0.01s" fill="freeze"/>.</tspan>
+    </tspan>
+  </text>
+
+  <!-- blinking cursor -->
+  <rect x="80" y="184" width="34" height="5" rx="2.5" fill="#22d3ee">
+    <animate attributeName="opacity" values="1;0;1" keyTimes="0;0.5;1" dur="1.1s" begin="1.9s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- tagline -->
+  <text x="82" y="228" font-family="'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace" font-size="17" fill="#8b8ba3" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="2.2s" dur="0.9s" fill="freeze"/>
+    i turn ambiguous problems into working systems — ai × markets × code
+  </text>
+
+  <!-- meta line -->
+  <text x="82" y="258" font-family="'SF Mono', Menlo, Consolas, monospace" font-size="13" fill="#565672" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="2.6s" dur="0.9s" fill="freeze"/>
+    minerva university · san francisco · open to interesting problems
+  </text>
+</svg>

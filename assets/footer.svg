@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 150" width="1200" height="150">
+  <defs>
+    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#a78bfa"/>
+      <stop offset="80%" stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    @keyframes dashmove { to { stroke-dashoffset: -240; } }
+    .flow { stroke-dasharray: 6 14; animation: dashmove 6s linear infinite; }
+    @keyframes breathe { 0%,100% { opacity: .35; } 50% { opacity: 1; } }
+    .breathe { animation: breathe 3s ease-in-out infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .orbit { transform-origin: center; transform-box: fill-box; animation: spin 10s linear infinite; }
+  </style>
+
+  <rect width="1200" height="150" fill="#050508"/>
+  <line x1="60" y1="40" x2="1140" y2="40" stroke="url(#line)" stroke-width="1.6" class="flow" opacity="0.9"/>
+
+  <g class="orbit">
+    <circle cx="600" cy="96" r="26" fill="none" stroke="#22d3ee" stroke-width="1.2" opacity="0.5" stroke-dasharray="20 12"/>
+    <circle cx="600" cy="70" r="3" fill="#22d3ee" class="breathe"/>
+  </g>
+  <circle cx="600" cy="96" r="6" fill="#a78bfa" class="breathe"/>
+
+  <text x="600" y="140" text-anchor="middle" font-family="'SF Mono', Menlo, Consolas, monospace" font-size="12.5" fill="#565672" letter-spacing="3">
+    ibrahim yildiz · est. 2004 · san francisco
+  </text>
+</svg>
