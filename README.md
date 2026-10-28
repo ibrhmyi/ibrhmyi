@@ -35,7 +35,7 @@ building at the intersection of **applied AI** and **prediction markets** — sh
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/ibrhmyi/ibrhmyi/output/github-contribution-grid-snake-dark.svg" alt="contribution snake" width="100%"/>
+<img src="assets/grid-snake.svg" alt="contribution signal — snake of light weaving through the grid" width="100%"/>
 
 </div>
 
