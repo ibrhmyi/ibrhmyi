@@ -1,22 +1,20 @@
 <div align="center">
 
-<img src="assets/header.svg" alt="hi, i'm ibrahim — i turn ambiguous problems into working systems" width="100%"/>
+<img src="assets/header.svg" alt="IBRAHIM YILDIZ — applied AI × prediction markets" width="100%"/>
 
 <br/>
 
-<a href="https://huggingface.co/ibrhmyi"><img src="https://img.shields.io/badge/hugging%20face-ibrhmyi-f5c542?style=flat-square&logo=huggingface&logoColor=white" alt="Hugging Face"/></a>
-<img src="https://img.shields.io/badge/sf--based-050508?style=flat-square" alt="sf"/>
-<img src="https://img.shields.io/badge/status-building-22d3ee?style=flat-square" alt="status: building"/>
+[`GITHUB`](https://github.com/ibrhmyi) · [`KAGGLE`](https://www.kaggle.com/brahimy/code) · [`HUGGING FACE`](https://huggingface.co/ibrhmyi)
 
 </div>
 
 ---
 
-### `>` currently
+### `01 / PROFILE`
 
 building at the intersection of **applied AI** and **prediction markets** — shipping agents, quant tooling, and products people actually use. undergrad at [minerva university](https://www.minerva.edu), based in san francisco.
 
-### `>` selected builds
+### `02 / SELECTED BUILDS`
 
 | project | what it does | stack |
 |--------:|--------------|-------|
@@ -26,33 +24,34 @@ building at the intersection of **applied AI** and **prediction markets** — sh
 | [**one_percent**](https://github.com/ibrhmyi/one_percent) | hunts near-resolution sports markets with mispriced tails | `ts` `data` |
 | [**DobbyForge**](https://github.com/ibrhmyi/DobbyForge) | character-model experimentation playground | `py` `ml` |
 
-### `>` signal
+### `03 / SIGNAL`
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=ibrhmyi&amp;show_icons=true&amp;hide_title=true&amp;hide_border=true&amp;bg_color=050508&amp;title_color=a78bfa&amp;icon_color=22d3ee&amp;text_color=e6e6ef&amp;ring_color=f472b6" alt="github stats"/>
-<img height="165" src="https://streak-stats.demolab.com?user=ibrhmyi&amp;hide_border=true&amp;background=050508&amp;ring=a78bfa&amp;fire=f472b6&amp;currStreakLabel=22d3ee&amp;sideLabels=8b8ba3&amp;dates=565672&amp;currStreakNum=e6e6ef&amp;sideNums=e6e6ef" alt="streak stats"/>
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=ibrhmyi&amp;show_icons=true&amp;hide_title=true&amp;hide_border=true&amp;bg_color=0a0a0a&amp;title_color=f5f5f5&amp;icon_color=f5f5f5&amp;text_color=8a8a8a&amp;ring_color=f5f5f5" alt="github stats"/>
+<img height="165" src="https://streak-stats.demolab.com?user=ibrhmyi&amp;hide_border=true&amp;background=0A0A0A&amp;ring=f5f5f5&amp;fire=f5f5f5&amp;currStreakLabel=f5f5f5&amp;sideLabels=8a8a8a&amp;dates=3d3d3d&amp;currStreakNum=f5f5f5&amp;sideNums=f5f5f5" alt="streak stats"/>
 
 <br/>
 
-<img src="assets/grid-snake.svg" alt="contribution signal — snake of light weaving through the grid" width="100%"/>
+<img src="assets/grid-snake.svg" alt="activity trace — snake of light weaving through the grid" width="100%"/>
 
 </div>
 
-### `>` toolbox
+### `04 / STACK`
 
-<div align="center">
+```
+LANGUAGES   .........  PYTHON / JAVASCRIPT / TYPESCRIPT / R / SQL / HTML+CSS
+FRAMEWORKS  .........  REACT / NEXT.JS / PYTORCH / TENSORFLOW / OPENCV / SPARK
+TOOLS       .........  GIT / AWS / SUPABASE / FIREBASE / REST APIS / WEBSOCKETS / CI-CD
+AI          .........  LLM APPS / AGENTS / MLOPS / FINE-TUNING
+```
 
-<img src="https://skillicons.dev/icons?i=ts,js,python,r,pytorch,react,nextjs,nodejs,docker,postgres,git,linux&amp;theme=dark" alt="toolbox"/>
-
-</div>
+<p align="right"><sub>also fluent in every AI tool worth using — and a few that aren't.</sub></p>
 
 ---
 
 <div align="center">
 
-<img src="assets/footer.svg" alt="ibrahim yildiz · san francisco" width="100%"/>
-
-*“i sometimes think too much” — then i ship it.*
+<img src="assets/footer.svg" alt="ibrahim yildiz · san francisco · EOF" width="100%"/>
 
 </div>
